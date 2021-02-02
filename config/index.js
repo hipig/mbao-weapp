@@ -1,3 +1,5 @@
+const path = require('path')
+
 const config = {
   projectName: 'mbao',
   date: '2021-2-2',
@@ -11,6 +13,10 @@ const config = {
   outputRoot: 'dist',
   plugins: [],
   defineConstants: {
+  },
+  alias: {
+    '@assets': path.resolve(__dirname, '..', 'src/assets'),
+    '@components': path.resolve(__dirname, '..', 'src/components')
   },
   copy: {
     patterns: [

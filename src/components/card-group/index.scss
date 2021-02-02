@@ -1,0 +1,39 @@
+.card-group {
+  padding: 12px;
+  border-radius: 20px;
+  background-color: #fff;
+  &__box {
+    padding: 0 40px;
+    min-height: 200px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 20px;
+    &-status {
+      padding: 6px 16px;
+      font-size: 30px;
+      color: #111827;
+      background-color: #fff;
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-bottom-right-radius: 20px;
+    }
+  }
+  &.card-group-pink {
+    background-color: #EC4899;
+    .card-group {
+      &__box {
+        &-status {
+          color: #fff;
+          background-color: #EC4899;
+        }
+      }
+    }
+  }
+  &+.card-group {
+    margin-top: 30px;
+  }
+}

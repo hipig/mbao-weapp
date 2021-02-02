@@ -1,8 +1,16 @@
 import React, { Component } from 'react'
 import { View, Text } from '@tarojs/components'
+import { CardGroup } from '@components'
 import './index.scss'
 
 export default class Index extends Component {
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      cardGroups: [1, 2, 3]
+    }
+  }
 
   componentWillMount () { }
 
@@ -15,9 +23,18 @@ export default class Index extends Component {
   componentDidHide () { }
 
   render () {
+    let { cardGroups } = this.state
+
     return (
-      <View className='index'>
+      <View className='content'>
         <Text>Hello world!</Text>
+        {
+          cardGroups.map((item, index) => {
+            return (
+              <CardGroup title={ item }></CardGroup>
+            )
+          })
+        }
       </View>
     )
   }
