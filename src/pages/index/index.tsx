@@ -25,15 +25,16 @@ export default class Index extends Component {
     let { cardGroups } = this.state
 
     return (
-      <View className='w-full px-4'>
-        <Text>Hello world!</Text>
-        {
-          cardGroups.map((item, index) => {
-            return (
-              <CardGroup title={ item }></CardGroup>
-            )
-          })
-        }
+      <View className='font-sans w-full px-4'>
+        <View className='py-1'>
+          {
+            cardGroups.map((item, index) => {
+              return (
+                <CardGroup title={ item }></CardGroup>
+              )
+            })
+          }
+        </View>
       </View>
     )
   }
