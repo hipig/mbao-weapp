@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { View, Text } from '@tarojs/components'
 import { CardGroup } from '@components'
-import './index.scss'
 
 export default class Index extends Component {
 
@@ -26,7 +25,7 @@ export default class Index extends Component {
     let { cardGroups } = this.state
 
     return (
-      <View className='content'>
+      <View className='w-full px-4'>
         <Text>Hello world!</Text>
         {
           cardGroups.map((item, index) => {

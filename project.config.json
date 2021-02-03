@@ -2,7 +2,7 @@
   "miniprogramRoot": "./dist",
   "projectname": "mbao",
   "description": "Weapp of early ducation literacy",
-  "appid": "touristappid",
+  "appid": "wx32c00f6bd287f59d",
   "setting": {
     "urlCheck": true,
     "es6": false,

@@ -36,12 +36,16 @@
   "author": "",
   "dependencies": {
     "@babel/runtime": "^7.7.7",
+    "@tailwindcss/postcss7-compat": "^2.0.2",
     "@tarojs/components": "3.0.26",
+    "@tarojs/react": "3.0.26",
     "@tarojs/runtime": "3.0.26",
     "@tarojs/taro": "3.0.26",
-    "@tarojs/react": "3.0.26",
+    "autoprefixer": "^9.8.6",
+    "postcss": "^7.0.35",
+    "react": "^16.10.0",
     "react-dom": "^16.10.0",
-    "react": "^16.10.0"
+    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.0.2"
   },
   "devDependencies": {
     "@types/webpack-env": "^1.13.6",

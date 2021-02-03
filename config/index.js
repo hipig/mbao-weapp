@@ -27,6 +27,10 @@ const config = {
   framework: 'react',
   mini: {
     postcss: {
+      tailwindcss: {
+        enable: true,
+        config: {}
+      },
       pxtransform: {
         enable: true,
         config: {
